@@ -59,35 +59,7 @@ router.get('/:id',async (request,response)=>{
 });
 
 //Route for Update a Book 
-// router.put('/:id', async(request,response)=>{
-//     try{
-//         if(
-//             !request.body.title||
-//             !request.body.author||
-//             !request.body.publishYear
-//         ){return response.status(400).send({message: "send all required fields: title, author, publishYear"});
-//     }
-//         const {id}=request.params;
-//         const result=await Book.findByIdAndUpdate(id,request.body,{ new: true });
 
-//         // if (!mongoose.isValidObjectId(id)) {
-//         //     return response.status(400).json({ message: 'Book not found' });
-//         //   }
-
-
-//     if(!result){
-//         return response.status(404).json({message:''});
-//     }
-
-//     }
-//     catch(error){
-//         console.log("catch")
-//         console.log(error.message);
-//         response.status(500).send({message : error.message});
-//     }
-// })
-
-// YT CODE UPDATE BOOK
 router.put('/:id', async (request, response) => {
     try {
       if (

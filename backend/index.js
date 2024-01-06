@@ -28,7 +28,7 @@ app.use(cors());
 
 app.get("/",(req,res)=>{
      console.log(res);
-     return res.status(234).send("WELCOME MOTHERFUCKER");
+     return res.status(234).send("HI");
 });
 
 app.use('/books',booksRoutes);
